@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<div>
+   
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="#" class="navbar-brand p-0">
+            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>ASD</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 me-n3">
+                                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Prediction</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/home" class="dropdown-item"> Adolescent</a>
+                        <a href="/home1" class="dropdown-item">Adults Screening</a>
+                        <a href="/home2" class="dropdown-item">Childern</a>
+                        <a href="/home3" class="dropdown-item">Toddler Form</a>
+                    
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/about1" class="dropdown-item"> Adolescent</a>
+                        <a href="/about2" class="dropdown-item">Adults Screening</a>
+                        <a href="/about3" class="dropdown-item">Childern</a>
+                        <a href="/about4" class="dropdown-item">Toddler Form</a>
+                    
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Notebook</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/notebook1" class="dropdown-item"> Adolescent</a>
+                        <a href="/notebook2" class="dropdown-item">Adults Screening</a>
+                        <a href="/notebook3" class="dropdown-item">Childern</a>
+                        <a href="/notebook4" class="dropdown-item">Toddler Form</a>
+                    
+                    </div>
+                </div>
+                <a href="/login" class="nav-item nav-link">Signout</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="static/maxresdefault.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Welcome To Dashboard</h5>
+                            <h1 class="display-1 text-white mb-md-4">A Machine Learning Framework for Early-Stage
+                                Detection of Autism Spectrum Disorders</h1>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="static/maxresdefault.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Welcome To Dashboard</h5>
+                            <h1 class="display-1 text-white mb-md-4">A Machine Learning Framework for Early-Stage
+                                Detection of Autism Spectrum Disorders</h1>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-secondary p-0">
+        <div class="row g-0"><br><br><br><br>
+                    <form action="/predict1" method="post" style="width: 50%;font-size: 1.2em;margin-left: 75px;">
+                        <div class="container">
+                          <div class="row">
+                            <br><br>
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A1:</label>
+                            <select class="form-control" id="age" name="0" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div><br><br>
+                        <div class="form-group">
+                          <label style="color: black;" for="age">A2:</label>
+                          <select class="form-control" id="age" name="1" required="required">
+                            <option value="">choose 0: No / 1: Yes</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                           
+                          </select>
+                        </div>
+          
+                        <br><br>
+                    
+                        <div class="form-group">
+                          <label style="color: black;" for="age">A3:</label>
+                          <select class="form-control" id="age" name="2" required="required">
+                            <option value="">choose 0: No / 1: Yes</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                           
+                          </select>
+                        </div>
+                    
+          
+                        <br><br>
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A4:</label>
+                            <select class="form-control" id="age" name="3" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div><br><br>
+                        
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A5:</label>
+                            <select class="form-control" id="age" name="4" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div>
+                          <br><br>
+                         
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A6:</label>
+                            <select class="form-control" id="age" name="5" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div><br><br>
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A7:</label>
+                            <select class="form-control" id="age" name="6" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div>
+                          <br><br>
+                          <div class="form-group">
+                            <label style="color: black;" for="age">A8:</label>
+                            <select class="form-control" id="age" name="7" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                          </div><br><br>
+                          <div class="form-group">
+                              <label style="color: black;" for="age">A9:</label>
+                              <select class="form-control" id="age" name="8" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">A10:</label>
+                              <select class="form-control" id="age" name="9" required="required">
+                                <option value="">choose 0: No / 1: Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                               
+                              </select>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <label style="color: black;" for="age">Age:</label>
+                                <input class="form-control" type="text" id="age" name="10" required="required">
+                              </div>
+                              <br><br>
+  
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Gender</label>
+                              <select class="form-control" id="age" name="11" required="required">
+                                <option value="">choose</option>
+                                <option value="1">Female</option>
+                                <option value="0">Male</option>
+                               
+                              </select>
+                              
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Ethnicity</label>
+                              <select class="form-control" id="age" name="12" required="required">
+                                <option value="">choose</option>
+                                <option value="0">Asian</option>
+                                <option value="1">Black</option>
+                                <option value="2">Hispanic</option>
+                                <option value="3">Latino</option>
+                                <option value="4">Middle Eastern</option>
+                                <option value="5">Others</option>
+                                <option value="6">Pasifika</option>
+                                <option value="7">South Asian</option>
+                                <option value="8">Turkish</option>
+                                <option value="9">White-European</option>
+                                <option value="10">others</option>
+                              </select>
+                              
+                            </div>
+          
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Jaundice</label>
+                              <select class="form-control" id="age" name="13" required="required">
+                                <option value="">choose</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                               
+                              </select>
+                              
+                            </div>
+                            
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Austim</label>
+                              <select class="form-control" id="age" name="14" required="required">
+                                <option value="">choose</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                               
+                              </select>
+                              
+                            </div>
+          
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Country of Resdeince</label>
+                              <select class="form-control" id="age" name="15" required="required">
+                                <option value="">choose</option>
+                                <option value="0">Afghanistan</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Armenia</option>
+                                <option value="3">Australia</option>
+                                <option value="4">Austria</option>
+                                <option value="5">Bahrain</option>
+                                <option value="6">Bangladesh</option>
+                                <option value="7">Bhutan</option>
+                                <option value="8">Brazil</option>
+                                <option value="9">Bulgaria</option>
+                                <option value="10">Canada</option>
+                                <option value="11">Costa Rica</option>
+                                <option value="12">Egypt</option>
+                                <option value="13">Europe</option>
+                                <option value="14">Georgia</option>
+                                <option value="15">Germany</option>
+                                <option value="16">Ghana</option>
+                                <option value="17">India</option>
+                                <option value="18">Iraq</option>
+                                <option value="19">Ireland</option>
+                                <option value="20">Isle of Man</option>
+                                <option value="21">Italy</option>
+                                <option value="22">Japan</option>
+                                <option value="23">Jordan</option>
+                                <option value="24">Libya</option>
+                                <option value="25">Malaysia</option>
+                                <option value="26">Malta</option>
+                                <option value="27">Mexico</option>
+                                <option value="28">Nepal</option>
+                                <option value="29">Netherlands</option>
+                                <option value="30">New Zealand</option>
+                                <option value="31">Nigeria</option>
+                                <option value="32">Oman</option>
+                                <option value="33">Pakistan</option>
+                                <option value="34">Philippines</option>
+                                <option value="35">Romania</option>
+                                <option value="36">Saudi Arabia</option>
+                                <option value="37">South Africa</option>
+                                <option value="38">South Korea</option>
+                                <option value="39">Sweden</option>
+                                <option value="40">Syria</option>
+                                <option value="41">Turkey</option>
+                                <option value="42">U.S. Outlying Islands</option>
+                                <option value="43">United Arab Emirates</option>
+                                <option value="44">United Kingdom</option>
+                                <option value="45">United States</option>
+                                </select>
+                              
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Used App Before</label>
+                              <select class="form-control" id="age" name="16" required="required">
+                                <option value="">choose</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                               
+                              </select>
+                              
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <label style="color: black;" for="age">Result:</label>
+                                <input class="form-control" type="text" id="age" name="17" required="required">
+                              </div>
+                
+                              <br><br>
+                          
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Age Desc </label>
+                              <select class="form-control" id="age" name="18" required="required">
+                                <option value="">choose</option>
+                                <option value="0">18 and more</option>
+                                
+                               
+                              </select>
+                              
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                              <label style="color: black;" for="age">Relation </label>
+                              <select class="form-control" id="age" name="19" required="required">
+                                <option value="">choose</option>
+                                <option value="0">Health Care Professional</option>
+                                <option value="2">Parent</option>
+                                <option value="3">Relative</option>
+                                <option value="4">Self</option>
+                                <option value="1">Other</option>
+                              </select>
+                              
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+                    <br><br>
+                   
+                          <button type="submit" class="w3-button w3-green" >Predict</button>
+                      </form>
+                      <br><br><br><br><br><br><br>
+                    </div>
+                    </div>
+                    <!-- About End -->
+                    
+                    <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+                        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Copyrights 2023</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                    </div>
+                    <!-- Footer End -->
+                    
+                    
+                    <!-- Back to Top -->
+                    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+                    
+                    
+                    <!-- JavaScript Libraries -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="static/lib/easing/easing.min.js"></script>
+                    <script src="static/lib/waypoints/waypoints.min.js"></script>
+                    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+                    
+                    <!-- Template Javascript -->
+                    <script src="static/js/main.js"></script>
+                    </body>
+                    
+                    </html>
